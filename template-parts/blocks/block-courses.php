@@ -32,3 +32,6 @@ $block_courses = get_field( 'courses' );
       <?php if ( $block_courses_link && $block_courses_link_text ) : ?>
         <a href="<?php echo esc_url( $block_courses_link ); ?>" class="btn btn-primary"><?php echo esc_html( $block_courses_link_text ); ?></a>
       <?php endif; ?>
+    </div>
+  </div>
+</section>
