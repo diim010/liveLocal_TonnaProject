@@ -5,25 +5,25 @@
 // ------------------------------------------------------
 :root {
   // Brand color pool
-  --color-black: #000;
-  --color-blue-chalk: #ece6f2;
-  --color-east-bay: #545773;
-  --color-pattens-blue: #eaf1f8;
-  --color-science-blue: #0049d1;
-  --color-scorpion: #5f5f5f;
-  --color-valhalla: #2a2d3e;
-  --color-white: #fff;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-telegram-bg: #17212b;
+  --color-telegram-secondary: #232e3c;
+  --color-telegram-text: #ffffff;
+  --color-telegram-text-secondary: #7d8e98;
+  --color-telegram-blue: #64aaff;
+  --color-telegram-hover: #2b5278;
 
   // Main element colors
-  --color-main: var(--color-valhalla);
-  --color-heading: var(--color-main);
-  --color-paragraph: var(--color-east-bay);
+  --color-main: var(--color-telegram-bg);
+  --color-heading: var(--color-telegram-text);
+  --color-paragraph: var(--color-telegram-text-secondary);
 
   // Modern link
-  --color-link-text: var(--color-science-blue);
-  --color-link-text-hover: var(--color-black);
+  --color-link-text: var(--color-telegram-blue);
+  --color-link-text-hover: var(--color-white);
 
   // Element states
-  --color-error: #cc2e2e;
-  --color-success: #21aa14;
+  --color-error: #ff3b30;
+  --color-success: #34c759;
 }

@@ -122,13 +122,43 @@ add_action( 'after_setup_theme', function() {
         'name'           => 'block-about',
         'title'          => 'About Block',
         'description'    => 'About block with background image and text',
-        // You can safely remove lines below if you find no use for them
         'prevent_cache'  => false, // Defaults to false,
-        // Icon defaults to svg file inside svg/block-icons named after the block name,
-        // eg. svg/block-icons/block-file-slug.svg
-        //
-        // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
-        // 'icon'  => 'block-default',
+        'icon'  => 'block-default',
+      ],
+      [
+        'name'           => 'block-faq',
+        'title'          => 'FAQ Block',
+        'description'    => 'FAQ block with background image and text',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
+      ],
+      [
+        'name'           => 'block-cta',
+        'title'          => 'Call to Action Block',
+        'description'    => 'Call to action block with background image and text',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
+      ],
+      [
+        'name'           => 'block-testimonials',
+        'title'          => 'Testimonials Block',
+        'description'    => 'Testimonials block',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
+      ],
+      [
+        'name'           => 'block-courses',
+        'title'          => 'Courses Block',
+        'description'    => 'Courses block with background image and text',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
+      ],
+      [
+        'name'           => 'block-accordion',
+        'title'          => 'Accordion Block',
+        'description'    => 'Accordion block with background image and text',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
       ],
     ],
 

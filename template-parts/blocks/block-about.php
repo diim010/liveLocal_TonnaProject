@@ -28,33 +28,4 @@
     ?>
   </div>
 </div>
-<?php
-  // Add any additional markup or classes as needed
-  ?>
-<style>
 
-.block-about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-.block-about__content {
-  flex: 1;
-  margin-right: 20px;
-}
-.block-about__title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.block-about__text {
-  font-size: 16px;
-}
-.block-about__image {
-  flex: 1;
-}
-.block-about__image img {
-  max-width: 100%;
-  height: auto;
-}
-</style>

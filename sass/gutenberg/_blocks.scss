@@ -1,7 +1,15 @@
 // List of all blocks: https://wordpress.org/support/article/blocks/
 // Core blocks only meant for article content
+@import 'blocks/acf/hero';
+@import 'blocks/acf/about';
+@import 'blocks/acf/courses';
+@import 'blocks/acf/faq';
 .editor-styles-wrapper,
 .article-content {
+  @import 'blocks/acf/hero';
+  @import 'blocks/acf/about';
+
+
   @import 'gutenberg/blocks/core-blockquote';
   @import 'gutenberg/blocks/core-buttons';
   @import 'gutenberg/blocks/core-columns';

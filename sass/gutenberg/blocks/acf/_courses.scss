@@ -1,0 +1,142 @@
+.block-courses {
+  .container {
+    .block-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin: 0 auto;
+    }
+    .block-content > div {
+      background-color: $color-light;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .block-content > div:hover {
+      background-color: $color-primary;
+      color: $color-light;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: $color-dark;
+    }
+    .block-content > div p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: $color-dark;
+    }
+    .block-content > div a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: $color-primary;
+      color: $color-light;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div a:hover {
+      background-color: $color-secondary;
+    }
+  }
+  @media (max-width: 768px) {
+    .block-content {
+      grid-template-columns: 1fr;
+    }
+    .block-content > div {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .block-content {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 0 auto;
+    }
+    .block-content > div {
+      margin: 0 auto;
+      width: 80%;
+    }
+    .block-content > div:hover {
+      background-color: $color-primary;
+      color: $color-light;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: $color-dark;
+    }
+    .block-content > div p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: $color-dark;
+    }
+    .block-content > div a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: $color-primary;
+      color: $color-light;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div a:hover {
+      background-color: $color-secondary;
+    }
+  }
+  @media (min-width: 1025px) {
+    .block-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin: 0 auto;
+    }
+    .block-content > div {
+      margin: 0 auto;
+      width: 80%;
+    }
+    .block-content > div:hover {
+      background-color: $color-primary;
+      color: $color-light;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: $color-dark;
+    }
+    .block-content > div p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: $color-dark;
+    }
+    .block-content > div a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: $color-primary;
+      color: $color-light;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .block-content > div a:hover {
+      background-color: $color-secondary;
+    }
+  }
+  @media (min-width: 1280px) {
+    .block-content {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin: 0 auto;
+    }
+    .block-content > div {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

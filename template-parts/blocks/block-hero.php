@@ -28,37 +28,4 @@
       ?>
     </div>
   </div>
-  <style>
-    .hero-block {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-    .hero-block__content {
-      max-width: 50%;
-    }
-    .hero-block__title {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .hero-block__description {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .hero-block__button {
-      padding: 10px 20px;
-      background-color: #0073aa;
-      color: #fff;
-      text-decoration: none;
-    }
-    .hero-block__image {
-      max-width: 50%;
-    }
-    .hero-block__image img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
 

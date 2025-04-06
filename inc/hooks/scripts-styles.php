@@ -38,7 +38,10 @@ function enqueue_theme_scripts() {
     filemtime( get_theme_file_path( get_asset_file( 'front-end.js' ) ) ),
     true
   );
+  wp_enqueue_style( 'uikit-css', 'https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css' );
 
+  wp_enqueue_script( 'uikit-js', 'https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js', [], null, true );
+  wp_enqueue_script( 'uikit-icons-js', 'https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js', [], null, true );
   // Required comment-reply script
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );

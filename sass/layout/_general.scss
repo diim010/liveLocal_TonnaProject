@@ -19,7 +19,7 @@ body:not(.wp-admin) {
 
 // Default structural element
 .block {
-  background-color: var(--color-white);
+  background-color: var(--color-main);
   margin: 0 auto;
   max-width: $width-max-layout;
   position: relative;
@@ -47,6 +47,8 @@ body:not(.wp-admin) {
 
 // Site wrapper
 .site {
+  background-color: var(--color-main);
+
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
