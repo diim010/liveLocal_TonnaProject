@@ -1,9 +1,6 @@
 // List of all blocks: https://wordpress.org/support/article/blocks/
 // Core blocks only meant for article content
-@import 'blocks/acf/hero';
-@import 'blocks/acf/about';
-@import 'blocks/acf/courses';
-@import 'blocks/acf/faq';
+
 .editor-styles-wrapper,
 .article-content {
   @import 'blocks/acf/hero';
@@ -26,8 +23,10 @@
   @import 'gutenberg/blocks/boxed';
   @import 'gutenberg/blocks/button-file';
 
-  // Add here those ACF Gutenberg blocks you want to use inside article-content
-  // @import 'gutenberg/blocks/your-new-acf-block';
+  @import 'gutenberg/blocks/acf/hero';
+  @import 'gutenberg/blocks/acf/about';
+  @import 'gutenberg/blocks/acf/courses';
+  @import 'gutenberg/blocks/acf/faq';
 }
 
 // Blocks only meant for outside article-content
@@ -36,6 +35,28 @@
   // Error block styles
   @import 'gutenberg/blocks/error';
 
-  // ACF blocks
-  // @import 'gutenberg/blocks/your-new-acf-block';
+  @import 'gutenberg/blocks/acf/hero';
+  @import 'gutenberg/blocks/acf/about';
+  @import 'gutenberg/blocks/acf/courses';
+  @import 'gutenberg/blocks/acf/faq';
+}
+.block-header {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+.block-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 1rem;
 }

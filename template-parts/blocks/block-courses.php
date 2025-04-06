@@ -20,18 +20,14 @@ $block_courses = get_field( 'courses' );
     </div>
     <div class="block-content">
       <?php if ( $block_courses ) : ?>
-        <div class="row">
           <?php foreach ( $block_courses as $course ) : ?>
-            <div class="col-md-4 col-sm-6 mb-4">
               <div class="course-card">
                 <a href="<?php echo esc_url( get_permalink( $course->ID ) ); ?>">
                   <?php echo get_the_post_thumbnail( $course->ID, 'medium' ); ?>
                   <h3><?php echo esc_html( get_the_title( $course->ID ) ); ?></h3>
                 </a>
               </div>
-            </div>
           <?php endforeach; ?>
-        </div>
       <?php endif; ?>
       <?php if ( $block_courses_link && $block_courses_link_text ) : ?>
         <a href="<?php echo esc_url( $block_courses_link ); ?>" class="btn btn-primary"><?php echo esc_html( $block_courses_link_text ); ?></a>
