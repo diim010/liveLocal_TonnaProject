@@ -20,12 +20,12 @@
     </div>
       <div class="block-content">
         <?php if ( have_rows('faq') ) : ?>
-          <ul uk-accordion>
+          <ul uk-accordion class="faq-list">
           <?php while( have_rows('faq') ) : the_row(); ?>
               <!--  -->
-            <li class="<?php the_sub_field('open'); ?>">
+            <li class="<?php the_sub_field('open'); ?> faq-list__item">
                 <a class="uk-accordion-title" href><?php the_sub_field('question'); ?></a>
-                <div class="uk-accordion-content">
+                <div class="faq-list__item-content uk-accordion-content">
                     <p><?php the_sub_field('answer'); ?></p>
                 </div>
               </li>

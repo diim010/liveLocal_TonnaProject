@@ -11,7 +11,7 @@
 
   ?>
 <div class="block-about">
-  <div class="block-about__content">
+  <div class="block-about__content" uk-scrollspy="cls: uk-animation-slide-left; delay: 3000; repeat: true">
     <h2 class="block-about__title">
       <?php echo esc_html( get_field( 'title' ) ); ?>
     </h2>
