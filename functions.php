@@ -160,6 +160,13 @@ add_action( 'after_setup_theme', function() {
         'prevent_cache'  => false, // Defaults to false,
         'icon'  => 'block-default',
       ],
+      [
+        'name'           => 'block-slider',
+        'title'          => 'Slider Block',
+        'description'    => 'Slider block with background image and text',
+        'prevent_cache'  => false, // Defaults to false,
+        'icon'  => 'block-default',
+      ],
     ],
 
     // Custom ACF block default settings
