@@ -24,12 +24,16 @@ function move_jquery_into_footer( $wp_scripts ) {
 function enqueue_theme_scripts() {
 
   // Enqueue global.css
-  wp_enqueue_style( 'styles',
-    get_theme_file_uri( get_asset_file( 'global.css' ) ),
+  wp_enqueue_style( 'common-css',
+    get_theme_file_uri( 'css/common.css' ),
     [],
-    filemtime( get_theme_file_path( get_asset_file( 'global.css' ) ) )
+    filemtime( get_theme_file_path( 'css/common.css' ) )
   );
-
+  wp_enqueue_style( 'styles',
+  get_theme_file_uri( get_asset_file( 'global.css' ) ),
+  [],
+  filemtime( get_theme_file_path( get_asset_file( 'global.css' ) ) )
+);
   // Enqueue jquery and front-end.js
   wp_enqueue_script( 'jquery-core' );
   wp_enqueue_script( 'scripts',

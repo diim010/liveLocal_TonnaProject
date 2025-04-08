@@ -11,14 +11,15 @@
 ?>
 <section class="block block-faq">
   <div class="container">
-    <div class="block-header">
-      <h2><?php the_field('block-title'); ?></h2>
-      <?php if ( get_field('block-description') ) : ?>
-        <p><?php echo get_field('block-description'); ?></p>
-      <?php endif; ?>
 
-    </div>
       <div class="block-content">
+          <div class="block-content__title">
+          <h2><?php the_field('block-title'); ?></h2>
+          <?php if ( get_field('block-description') ) : ?>
+            <p><?php echo get_field('block-description'); ?></p>
+          <?php endif; ?>
+
+        </div>
         <?php if ( have_rows('faq') ) : ?>
           <ul uk-accordion class="faq-list">
           <?php while( have_rows('faq') ) : the_row(); ?>

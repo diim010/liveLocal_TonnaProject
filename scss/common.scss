@@ -1,0 +1,14 @@
+@import 'vars/colors';
+@import 'layout/general';
+@import 'typedef';
+
+@import 'blocks/core';
+
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/courses';
+@import 'blocks/faq';
+body {
+  background-color:#222 !important;
+}
+
