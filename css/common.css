@@ -221,6 +221,12 @@ a:focus-visible {
   background-color: #333 !important;
 }
 
+.block-slider__item-content {
+  width: 70% !important;
+  padding: 30px 50px;
+  background-color: rgba(5, 4, 4, 0.7176470588);
+}
+
 body {
   background-color: #222 !important;
 }
