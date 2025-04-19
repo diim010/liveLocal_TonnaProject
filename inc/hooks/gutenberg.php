@@ -108,6 +108,10 @@ function register_block_editor_assets() {
     filemtime( get_theme_file_path( get_asset_file( 'gutenberg-editor.js' ) ) ),
     'all'
   );
+  wp_enqueue_style( 'editor-uikit-css', 'https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css' );
+  wp_enqueue_script( 'jquery-core' );
+
+  wp_enqueue_script( 'editor-uikit-js', 'https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js', [], null, true );
 
   // Enqueue optional editor only styles
   wp_enqueue_style(
@@ -117,6 +121,11 @@ function register_block_editor_assets() {
     filemtime( get_theme_file_path( get_asset_file( 'gutenberg-editor-styles.css' ) ) ),
     'all',
     true
+  );
+  wp_enqueue_style( 'editor-common-css',
+    get_theme_file_uri( 'css/common.css' ),
+    [],
+    filemtime( get_theme_file_path( 'css/common.css' ) )
   );
 } // end register_block_editor_assets
 

@@ -1,16 +1,19 @@
 @import 'vars/colors';
 @import 'layout/general';
-@import 'typedef';
 
-@import 'blocks/core';
 
-@import 'blocks/hero';
-@import 'blocks/about';
-@import 'blocks/courses';
-@import 'blocks/faq';
-@import 'blocks/slider';
 
-body {
-  background-color:#222 !important;
+
+.editor-styles-wrapper,
+.article-content.editor-styles-wrapper,
+.site-main {
+  @import 'blocks/core';
+
+  @import 'blocks/hero';
+  @import 'blocks/about';
+  @import 'blocks/courses';
+  @import 'blocks/faq';
+  @import 'blocks/slider';
 }
+
 

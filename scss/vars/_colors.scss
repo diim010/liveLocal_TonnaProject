@@ -1,17 +1,17 @@
 // Atom Dark Theme SCSS Variables
 
-$bg: #282c34; // Base background color
+$bg: #000; // Base background color
 $surface: #383e4a; // Lighter background for panels/sidebars
-$background-highlight: #3e4451; // Highlighted background
-$background-selection: #4f5666; // Selection background
+$bg-high: #07080a; // Highlighted background
+$select: #4f5666; // Selection background
 
 $text: #abb2bf; // Main text color
-$text-lighter: #c8ccd4; // Lighter text color
+$light: #c8ccd4; // Lighter text color
 $text-muted: #6b778d; // Muted text color
-$text-heading: #e06c75; // Heading text color
+$accent: #e20719; // Heading text color
 
-$atom-dark-border: #3e4451; // Border color
-$atom-dark-border-lighter: #5c6370; // Lighter border color
+$border: #3e4451; // Border color
+$border-light: #5c6370; // Lighter border color
 
 $atom-dark-accent: #61afef; // Accent color (links, highlights)
 $atom-dark-accent-light: #9cdcfe; // Lighter accent

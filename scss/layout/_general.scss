@@ -2,6 +2,9 @@
   width: 1200px;
   margin: 0 auto;
 }
-.site-main {
-  background-color: $bg;
+.site-main,
+.site,
+.site-content,
+.site-footer {
+  background-color: $bg !important;
 }

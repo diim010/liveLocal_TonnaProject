@@ -6,6 +6,48 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
       margin: 0 auto;
+      .course-card {
+        display: block;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+        &:hover img {
+          transform: scale(1.1);
+        }
+        &:hover h3 {
+          color: #fff;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        h3 {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          color: $text;
+          font-size: 34px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        &:hover {
+          cursor: pointer;
+          border-bottom: 1px solid $accent;
+        }
+        &:hover img {
+          transform: scale(1.1);
+        }
+        &:hover h3 {
+          color: $accent;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+      }
     }
   }
   .block-content {
